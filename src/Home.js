@@ -18,7 +18,7 @@ const Error = styled.span`
 const Home = () => <Query query={HOME_PAGE}>{({loading, data, error}) => {
     if(loading) return  <Loading>loading...</Loading>
     if(error) return <Error>Error!!!</Error>
-    return data.movies.map(movie => <Movie key= {movie.id} title={movie.title} img={movie.medium_cover_image} rating={movie.rating}></Movie>
+    return data.movies.map(movie => <Movie key= {movie.id} title={movie.title} img={movie.medium_cover_image} rating={movie.rating} id={movie.id}></Movie>
 );
 }}</Query>;
 export default Home;

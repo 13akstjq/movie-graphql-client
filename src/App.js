@@ -12,6 +12,7 @@ const Container = styled.div`
   flex-wrap : wrap;
   justify-content: space-around;
   padding : 60px;
+  background-color : #eff3f7;
 `
 
 
